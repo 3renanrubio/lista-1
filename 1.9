@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <locale.h>
+int main(){
+setlocale(LC_ALL, "portuguese");
+float valTot=0.0, parcela3=0.0, desc10=0.0;
+//comissaoValorTotalParcelado = cVTP - comissaoValorDesconto10% = cVD10
+float cVTP=0.0, cVD10=0.0;
+printf("Vendedor Por Favor, digite o valor total da compra: R$ ");
+scanf("%f", &valTot);
+printf("Cliente o VALOR TOTAL de sua compra = R$ %.2f", valTot);
+parcela3=(valTot/3);
