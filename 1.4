@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+#include <locale.h>
+int main(){
+setlocale(LC_ALL, "Portuguese");
+float numero;
+printf("Digite um número real: ");
+scanf("%f", &numero);
+printf("O quadrado do número digitado é: %.2f\n", pow(numero, 2));
+return 0;
+}
