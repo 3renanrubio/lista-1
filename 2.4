@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+#include <locale.h>
+int main() {
+setlocale(LC_ALL, "Portuguese");
+float numero=0, raiz=0, quadrado=0;
+printf("Digite um número maior que zero: ");
+scanf("%f", &numero);
+if (numero >= 0) {
+raiz = sqrt(numero);
+quadrado = pow(numero, 2);
+printf("O número digitado ao quadrado é: %.2f\n", quadrado);
+printf("A raiz quadrada do número digitado é: %.2f\n", raiz);
+} else {
+printf("Número inválido!\n");
+}
+return 0;
+}
